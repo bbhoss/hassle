@@ -22,6 +22,7 @@ class Hassle
       
     else
       # Not a request Hassle cares about
+      Rails.logger.info "Not a Hassle!!!"
       @app.call(env)
     end
   end
